@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kajan Bala | SP Building Services Ltd</title>
+  <meta name="theme-color" content="#D45312" />
+  <style>
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      padding: 10px;
+      background: #F7F8FA;
+      font-family: Arial, Helvetica, sans-serif;
+      color: #04323F;
+    }
+    .wrap {
+      max-width: 420px;
+      margin: 0 auto;
+    }
+    .card {
+      background: #FFFFFF;
+      border: 1px solid #E6E8EC;
+      border-radius: 16px;
+      overflow: hidden;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.05);
+    }
+    .top-strip {
+      height: 6px;
+      background: #D45312;
+    }
+    .top {
+      padding: 16px 14px 12px;
+      text-align: center;
+      background: linear-gradient(180deg, #FFFFFF 0%, #FBFBFC 100%);
+    }
+    .logo {
+      width: 62px;
+      display: block;
+      margin: 2px auto 8px;
+    }
+    .name {
+      display: inline-block;
+      background: #D45312;
+      color: #FFFFFF;
+      font-size: 18px;
+      font-weight: 800;
+      line-height: 1.1;
+      padding: 8px 14px;
+      border-radius: 8px;
+      margin-bottom: 8px;
+    }
+    .title {
+      font-size: 14px;
+      color: #616A75;
+      font-weight: 700;
+      margin-bottom: 4px;
+    }
+    .company {
+      font-size: 13px;
+      font-weight: 700;
+      color: #04323F;
+    }
+    .divider {
+      height: 1px;
+      background: #E6E8EC;
+      margin-top: 12px;
+    }
+    .body {
+      padding: 12px;
+    }
+    .info-grid {
+      display: grid;
+      gap: 8px;
+      margin-bottom: 10px;
+    }
+    .info {
+      background: #F7F8FA;
+      border: 1px solid #E6E8EC;
+      border-radius: 10px;
+      padding: 10px 12px;
+    }
+    .label {
+      display: block;
+      font-size: 10px;
+      font-weight: 700;
+      color: #616A75;
+      text-transform: uppercase;
+      margin-bottom: 3px;
+    }
+    .value, .value a {
+      font-size: 13px;
+      line-height: 1.3;
+      color: #04323F;
+      text-decoration: none;
+      font-weight: 700;
+      word-break: break-word;
+    }
+    .buttons {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 8px;
+      margin-bottom: 10px;
+    }
+    .btn {
+      display: inline-block;
+      text-align: center;
+      padding: 10px 12px;
+      border-radius: 999px;
+      text-decoration: none;
+      font-size: 13px;
+      font-weight: 700;
+      border: 1px solid #C9CED6;
+      background: #FFFFFF;
+      color: #1F2937;
+    }
+    .btn.primary {
+      background: #D45312;
+      border-color: #D45312;
+      color: #FFFFFF;
+    }
+    .btn.full {
+      grid-column: 1 / -1;
+    }
+    .qr-box {
+      text-align: center;
+      background: #F7F8FA;
+      border: 1px solid #E6E8EC;
+      border-radius: 12px;
+      padding: 10px;
+      margin-bottom: 8px;
+    }
+    .qr-box img {
+      width: 96px;
+      height: 96px;
+      display: block;
+      margin: 0 auto 6px;
+      border-radius: 8px;
+    }
+    .qr-text {
+      font-size: 11px;
+      color: #616A75;
+      line-height: 1.3;
+    }
+    .mini-note {
+      text-align: center;
+      font-size: 11px;
+      color: #7A838E;
+      margin-top: 6px;
+    }
+    @media (max-width: 420px) {
+      .buttons { grid-template-columns: 1fr 1fr; }
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="card">
+      <div class="top-strip"></div>
+      <div class="top">
+        <img class="logo" src="https://drive.google.com/thumbnail?id=1xl3YcI-RIWXPN0nnU8cW0LOkTQdZ458F&amp;sz=w400" alt="SP Building Logo">
+        <div class="name">Kajan Bala</div>
+        <div class="title">Construction Engineer</div>
+        <div class="company">SP Building Services Ltd</div>
+        <div class="divider"></div>
+      </div>
+
+      <div class="body">
+        <div class="info-grid">
+          <div class="info">
+            <span class="label">Email</span>
+            <div class="value"><a href="mailto:kaj@spbuilding.com">kaj@spbuilding.com</a></div>
+          </div>
+          <div class="info">
+            <span class="label">Phone</span>
+            <div class="value"><a href="tel:+447588840270">07588840270</a></div>
+          </div>
+          <div class="info">
+            <span class="label">Website</span>
+            <div class="value"><a href="https://www.spbuilding.com">www.spbuilding.com</a></div>
+          </div>
+        </div>
+
+        <div class="buttons">
+          <a class="btn primary full" href="https://vali-sp.github.io/spbuilding-contacts/Kajan_Bala.vcf" download>Save Contact</a>
+          <a class="btn" href="mailto:kaj@spbuilding.com">Send Email</a>
+          <a class="btn" href="https://www.spbuilding.com">Visit Website</a>
+          <a class="btn" href="tel:+447588840270">Call</a>
+          <a class="btn" href="https://wa.me/447588840270">WhatsApp</a>
+          <a class="btn full" href="#" onclick="shareContact(event)">Share</a>
+        </div>
+
+        <div class="qr-box">
+          <img src="https://drive.google.com/thumbnail?id=14RbNUlrRz3-nho8g3oGwEJSvmXjzXH8p&amp;sz=w400" alt="SP Building QR Code">
+          <div class="qr-text">Scan to visit SP Building Services Ltd.</div>
+        </div>
+
+        <div class="mini-note">Save the contact card to keep Kajan’s details handy.</div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    function shareContact(event) {
+      event.preventDefault();
+      const shareData = {
+        title: 'Kajan Bala | SP Building Services Ltd',
+        text: 'Kajan Bala - Construction Engineer, SP Building Services Ltd',
+        url: window.location.href
+      };
+      if (navigator.share) {
+        navigator.share(shareData).catch(() => {});
+      } else if (navigator.clipboard) {
+        navigator.clipboard.writeText(window.location.href).then(() => {
+          alert('Link copied.');
+        });
+      }
+    }
+  </script>
+</body>
+</html>
