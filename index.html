@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Valentin Pletea | SP Building Services Ltd</title>
+  <meta name="theme-color" content="#D45312">
+  <style>
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      padding: 24px;
+      background: #F7F8FA;
+      font-family: Arial, Helvetica, sans-serif;
+      color: #04323F;
+    }
+
+    .wrap {
+      max-width: 560px;
+      margin: 0 auto;
+    }
+
+    .card {
+      background: #FFFFFF;
+      border: 1px solid #E6E8EC;
+      border-radius: 18px;
+      overflow: hidden;
+      box-shadow: 0 10px 28px rgba(0,0,0,0.06);
+    }
+
+    .top-strip {
+      height: 8px;
+      background: linear-gradient(90deg, #D45312 0%, #E46A22 100%);
+    }
+
+    .top {
+      padding: 28px 24px 20px 24px;
+      text-align: center;
+      background: linear-gradient(180deg, #FFFFFF 0%, #FBFBFC 100%);
+    }
+
+    .logo {
+      width: 90px;
+      height: auto;
+      display: block;
+      margin: 10px auto 20px auto;
+    }
+
+    .name {
+      display: inline-block;
+      background: #D45312;
+      color: #FFFFFF;
+      font-size: 28px;
+      line-height: 1.1;
+      font-weight: 800;
+      padding: 12px 20px;
+      border-radius: 10px;
+      margin-bottom: 12px;
+    }
+
+    .title {
+      font-size: 18px;
+      color: #616A75;
+      font-weight: 600;
+      margin-bottom: 8px;
+    }
+
+    .company {
+      font-size: 15px;
+      font-weight: 700;
+      color: #04323F;
+    }
+
+    .divider {
+      height: 1px;
+      background: #E6E8EC;
+      margin: 22px 0 0 0;
+    }
+
+    .body {
+      padding: 22px 24px 26px 24px;
+    }
+
+    .info-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 12px;
+      margin-bottom: 22px;
+    }
+
+    .info {
+      background: #F7F8FA;
+      border: 1px solid #E6E8EC;
+      border-radius: 12px;
+      padding: 14px 16px;
+    }
+
+    .label {
+      display: block;
+      font-size: 12px;
+      font-weight: 700;
+      letter-spacing: 0.3px;
+      color: #616A75;
+      text-transform: uppercase;
+      margin-bottom: 4px;
+    }
+
+    .value,
+    .value a {
+      font-size: 15px;
+      line-height: 1.4;
+      color: #04323F;
+      text-decoration: none;
+      font-weight: 600;
+      word-break: break-word;
+    }
+
+    .buttons {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 12px;
+      margin-bottom: 22px;
+    }
+
+    .btn {
+      display: inline-block;
+      text-align: center;
+      padding: 14px 16px;
+      border-radius: 999px;
+      text-decoration: none;
+      font-size: 14px;
+      font-weight: 700;
+      border: 1px solid #C9CED6;
+      background: #FFFFFF;
+      color: #1F2937;
+    }
+
+    .btn.primary {
+      background: #D45312;
+      border-color: #D45312;
+      color: #FFFFFF;
+    }
+
+    .btn.full {
+      grid-column: 1 / -1;
+    }
+
+    .qr-box {
+      text-align: center;
+      background: #F7F8FA;
+      border: 1px solid #E6E8EC;
+      border-radius: 14px;
+      padding: 18px 16px;
+      margin-bottom: 20px;
+    }
+
+    .qr-box img {
+      width: 120px;
+      height: 120px;
+      display: block;
+      margin: 0 auto 10px auto;
+      border-radius: 10px;
+    }
+
+    .qr-text {
+      font-size: 13px;
+      color: #616A75;
+      line-height: 1.4;
+    }
+
+    .footer-line {
+      height: 2px;
+      background: #DADFE6;
+      width: 100%;
+      margin: 18px 0 12px 0;
+    }
+
+    .statement {
+      color: #04323F;
+      font-size: 13px;
+      font-style: italic;
+      font-weight: 700;
+      font-family: Georgia, "Times New Roman", serif;
+      line-height: 1.5;
+      text-align: center;
+    }
+
+    .mini-note {
+      text-align: center;
+      font-size: 12px;
+      color: #7A838E;
+      margin-top: 14px;
+    }
+
+    @media (max-width: 520px) {
+      body {
+        padding: 14px;
+      }
+
+      .top {
+        padding: 22px 16px 18px 16px;
+      }
+
+      .body {
+        padding: 18px 16px 22px 16px;
+      }
+
+      .name {
+        font-size: 24px;
+      }
+
+      .buttons {
+        grid-template-columns: 1fr;
+      }
+
+      .btn.full {
+        grid-column: auto;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="card">
+
+      <div class="top-strip"></div>
+
+      <div class="top">
+        <img class="logo" src="https://drive.google.com/thumbnail?id=1xl3YcI-RIWXPN0nnU8cW0LOkTQdZ458F&sz=w400" alt="SP Building Logo">
+        <div class="name">Valentin Pletea</div>
+        <div class="title">Administration Manager</div>
+        <div class="company">SP Building Services Ltd</div>
+        <div class="divider"></div>
+      </div>
+
+      <div class="body">
+
+        <div class="info-grid">
+          <div class="info">
+            <span class="label">Email</span>
+            <div class="value"><a href="mailto:vali@spbuilding.com">vali@spbuilding.com</a></div>
+          </div>
+
+          <div class="info">
+            <span class="label">Phone</span>
+            <div class="value"><a href="tel:07947542468">07947 542468</a></div>
+          </div>
+
+          <div class="info">
+            <span class="label">Website</span>
+            <div class="value"><a href="https://www.spbuilding.com">www.spbuilding.com</a></div>
+          </div>
+
+          <div class="info">
+            <span class="label">Company</span>
+            <div class="value">SP Building Services Ltd</div>
+          </div>
+        </div>
+
+        <div class="buttons">
+          <a class="btn primary full" href="https://drive.google.com/uc?export=download&id=1wAPu75diWJ3tbm6iweBnh6f83OS6gYXA">Save Contact</a>
+          <a class="btn" href="mailto:vali@spbuilding.com">Send Email</a>
+          <a class="btn" href="https://www.spbuilding.com">Visit Website</a>
+          <a class="btn" href="tel:07947542468">Call</a>
+          <a class="btn" href="#" onclick="shareContact(event)">Share Contact</a>
+        </div>
+
+        <div class="qr-box">
+          <img src="https://drive.google.com/thumbnail?id=14RbNUlrRz3-nho8g3oGwEJSvmXjzXH8p&sz=w400" alt="SP Building QR Code">
+          <div class="qr-text">
+            Scan the QR code to visit SP Building Services Ltd.
+          </div>
+        </div>
+
+        <div class="footer-line"></div>
+
+        <div class="statement">
+          "YOUR VISION IS OUR RESPONSIBILITY TO MAKE IT REALITY.<br>
+          GIVE US YOUR CHALLENGES, WE’LL GIVE YOU RESULTS."
+        </div>
+
+        <div class="mini-note">
+          Save the contact card to keep Valentin’s details handy.
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <script>
+    function shareContact(event) {
+      event.preventDefault();
+
+      const shareData = {
+        title: 'Valentin Pletea | SP Building Services Ltd',
+        text: 'Valentin Pletea - Administration Manager, SP Building Services Ltd',
+        url: window.location.href
+      };
+
+      if (navigator.share) {
+        navigator.share(shareData).catch(() => {});
+      } else {
+        navigator.clipboard.writeText(window.location.href).then(() => {
+          alert('Contact page link copied.');
+        }).catch(() => {
+          alert(window.location.href);
+        });
+      }
+    }
+  </script>
+</body>
+</html>
